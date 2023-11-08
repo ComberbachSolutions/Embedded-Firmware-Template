@@ -17,12 +17,18 @@ AlignConsecutiveBitFields:
 BreakBeforeBraces: Custom
 BraceWrapping:
   AfterFunction: true
+  AfterCaseLabel: true
   AfterEnum: true
   AfterStruct: true
   AfterControlStatement: Always
   AfterUnion: true
   BeforeElse: true
   BeforeWhile: false
+  AfterExternBlock: true
+  BeforeCatch: true
+  AfterClass: true
+  AfterNamespace: true
+  AfterObjCDeclaration: true
 InsertBraces: true
 SpaceBeforeParens: Never
 SpacesBeforeTrailingComments: 0
@@ -32,3 +38,5 @@ SpacesInLineCommentPrefix:
 AllowShortFunctionsOnASingleLine: None
 PointerAlignment: Right
 IndentPPDirectives: BeforeHash
+IncludeBlocks: Merge
+InsertNewlineAtEOF: true

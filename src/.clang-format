@@ -14,21 +14,7 @@ AlignConsecutiveBitFields:
   Enabled: true
   AcrossEmptyLines: false
   AcrossComments: false
-BreakBeforeBraces: Custom
-BraceWrapping:
-  AfterFunction: true
-  AfterCaseLabel: true
-  AfterEnum: true
-  AfterStruct: true
-  AfterControlStatement: Always
-  AfterUnion: true
-  BeforeElse: true
-  BeforeWhile: false
-  AfterExternBlock: true
-  BeforeCatch: true
-  AfterClass: true
-  AfterNamespace: true
-  AfterObjCDeclaration: true
+BreakBeforeBraces: Allman
 InsertBraces: true
 SpaceBeforeParens: Never
 SpacesBeforeTrailingComments: 0

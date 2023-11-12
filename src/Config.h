@@ -1,8 +1,15 @@
 #ifndef CONFIG_H
 #define	CONFIG_H
 
+#include <stdint.h>
+
+//Supported Processors
+// #define MCU_PIC24F16KA101
+
 //Hardware specific include file
-#include <p24F16KA101.h>
+#ifdef MCU_PIC24F16KA101
+	#include <p24F16KA101.h>
+#endif
 
 //Frequency Definitions
 enum FREQUENCY_UNITS
@@ -69,16 +76,33 @@ enum SCHEDULER_DEFINITIONS
 	NUMBER_OF_TASKS
 };
 
-//Expected Library Versions
-	//Pins Library
-	#define PINS_MAJOR	2
-	#define PINS_MINOR	0
-	#define PINS_PATCH	0
+//Hidden Objects
+enum HiddenObject_ObjectList
+{
+	HIDDENOBJECT_,
+	NUMBER_OF_HIDDENOBJECTS
+};
 
-	//Scheduler Library
-	#define SCHEDULER_MAJOR	1
-	#define SCHEDULER_MINOR	0
-	#define SCHEDULER_PATCH	0
+//Feature Flags
+// #define FEATURE_PINS
+// #define FEATURE_SCHEDULER
+#define FEATURE_HIDDENOBJECT
+
+//Expected Library Versions
+//Pins Library
+#define PINS_MAJOR	2
+#define PINS_MINOR	0
+#define PINS_PATCH	0
+
+//Scheduler Library
+#define SCHEDULER_MAJOR	1
+#define SCHEDULER_MINOR	0
+#define SCHEDULER_PATCH	0
+
+//HiddenObject Library
+#define HIDDENOBJECT_MAJOR 0
+#define HIDDENOBJECT_MINOR 0
+#define HIDDENOBJECT_PATCH 0
 
 void Configure_MCU(void);
 

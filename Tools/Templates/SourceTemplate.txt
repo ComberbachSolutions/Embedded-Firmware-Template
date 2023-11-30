@@ -18,13 +18,15 @@ v0.0.0	YYYY-MM-DD	Craig Comberbach	Compiler: [Compiler] [Version]
 #endif
 
 /***********Magic Numbers*************/
-/************Enumeration**************/
+/************Enumerations*************/
+/**********Type Definitions***********/
+/*************Structures**************/
+/**********Global Variables***********/
 /*********Object Definition***********/
 struct
 {
 
 } self[NUMBER_OF_%1$s];
 
-/**********Global Variables***********/
 /*****Local Function Prototypes*******/
 /*********Main Body Of Code***********/
